@@ -20,7 +20,6 @@ module.exports = (app) => {
     verifySameOrganization,
     ctl.getConnectedGmailsWithOrg
   );
-
   app.get(
     `${process.env.APP_URL}/organization/:org_id/customers`,
     authUser,
