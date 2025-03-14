@@ -10,7 +10,6 @@ async function getGoogleAuthTokens({code}) {
     redirect_uri: process.env.GOOGLE_REDIRECT_URL,
     grant_type: 'authorization_code',
   };
-  console.log('values', values);
   try {
     const res = await axios.post(url, qs.stringify(values), {
       headers: {
